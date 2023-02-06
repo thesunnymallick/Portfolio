@@ -1,0 +1,162 @@
+@import "variable.scss";
+@import "animation.scss";
+
+#timeline{
+    width: 100%;
+    height: 100vh;
+    margin-top: 1rem;
+    background-color: $color1;
+
+    .timelineBox{
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+      //  border: 2px solid red;
+
+        &::after{
+           
+            content: "";
+            position: absolute;
+            width: 6px;
+            background-color: $color5;
+            top: 0%;
+            bottom: 0%;
+            left: 50%;
+            margin-left:-3px ;
+
+        }
+
+
+        .timelineItem{
+            padding: 0.6rem 3rem;
+            background-color: inherit;
+            position: relative;
+            width: 50%;
+
+
+            &:nth-child(odd)
+            {
+                text-align: right;
+               
+            }
+            &:nth-child(even)
+            {
+                text-align: left;
+               
+
+            }
+
+
+            &::after{
+                content: "";
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                background-color: $color1;
+                border: 4px solid $color5;
+                border-radius: 50%;
+                right: -17px;
+                top:45px;
+                z-index: 1;
+            }
+
+            >div{
+                padding: 0.4rem 2rem;
+                background-color: $color5;
+                color: $color1;
+                border-radius: 20px;
+                box-shadow: 0px 0px 5px 1px $color5;
+                animation: upanddown 0.3s infinite ease-in-out alternate;
+
+            }
+        }
+    }
+
+
+}
+
+
+.leftTimeline{
+
+    left: 0%
+}
+
+.rightTimeline{
+   left : 50%;
+  
+   &::after{
+   left:-16px;
+   }
+}
+@media only screen and (max-width: 1232px){
+    #timeline{
+
+        .timelineBox{
+         .timelineItem{
+            &::after{
+                top: 30px;
+            }
+            >div{
+               > h2{
+                    font-size: 1.2rem;
+                }
+                >p{
+                    font-size: 0.8rem;
+                }
+            }
+         }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 670px){
+
+
+    #timeline{
+        .timelineBox{
+            &::after{
+                left: 31px;
+            }
+         .timelineItem{
+            width: 100%;
+            padding-left: 5rem;
+            padding-right: 2rem;
+            &::after{
+                top: 30px;
+            }
+            >div{
+               > h2{
+                    font-size: 1.2rem;
+                }
+                >p{
+                    font-size: 0.8rem;
+                }
+            }
+         }
+        }
+
+    }
+
+    .leftTimeline{
+
+        left: 0%;
+        &::after{
+            left:16px;
+            }
+
+    }
+    
+    .rightTimeline{
+       left : 0%;
+      
+       &::after{
+       left:16px;
+       }
+    }
+}

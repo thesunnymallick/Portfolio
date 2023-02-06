@@ -1,0 +1,190 @@
+@import "variable.scss";
+
+#project{
+    width: 100%;
+    height: 100vh;
+    padding: 6rem 2rem;
+
+    h2{
+        font-size: 2rem;
+        margin: auto;
+        width: fit-content;
+        font-family: $text2;
+        font-weight: 600;
+        border-bottom: 1px solid $color6_1;
+        padding: 0.5rem;
+    }
+    >section{
+        margin-top: 4rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+
+        >article{
+            width: 80%;
+            height: 18rem;
+
+        }
+
+        .workItems{
+            overflow-y: auto;
+            width: 95%;
+            height: 18rem;
+            margin: auto;
+            padding: 2rem;
+            display: flex;
+            background-color: $color1;
+          
+            box-shadow: 0px 0px  15px 2px $color6_1;
+            border-radius: 20px;
+            margin: 0.5rem;
+
+            img{
+                width: 40%;
+                border-radius: 20px;
+                object-fit: contain; 
+                
+          
+               
+    
+             }
+            aside{
+                padding: 2rem;
+                width: 60%;
+             
+
+                h4{
+                    font-size: 1.20rem;
+                    font-family: $text2;
+                    margin-bottom: 1rem;
+                }
+                p{
+                    font-size: 0.7rem;
+                   letter-spacing: 1px;
+                    line-height: 130%;
+                }
+                >div{
+                    margin-top: 2rem;
+                    display: flex;
+                    justify-content: space-evenly;
+                    >a{
+                        &:first-of-type{
+                          
+                          
+                            background-color: $color3;
+                            color: $color1;
+                            text-align: center;
+                            padding: 0.5rem 0.9rem;
+                            transition: all 0.3s;
+                            text-transform: uppercase;
+                             font-size: 0.7rem;
+                             font-weight: 600;
+            
+                             &:hover{
+                                background-color: $color3_1;
+                             }
+                        }
+                        &:last-of-type{
+                            
+                            display: flex;
+                            align-items: center;
+                            padding: 0.5rem 0.9rem;
+                            transition: all 0.3s;
+                             text-transform: uppercase;
+                             font-size: 0.7rem;
+                             font-weight: 600;
+                             color: $color3;
+                             border: 2px solid $color3;
+            
+                             &:hover{
+                                background-color: $color3;
+                                color: $color1;
+                             }
+            
+                          
+            
+                        }
+                       }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1232px){
+    #project{
+         padding: 1.5rem;
+        
+        >section{
+            margin-top: 2rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1232px){
+    #project{
+         padding: 1rem;
+         height: 95vh;
+         h2{
+            font-size: 1.5rem;
+         }
+        
+        >section{
+            margin-top: 1.5rem;
+            >article{
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 670px){
+    #project{
+        height: 90vh;
+        >section{
+            >article{
+                width: 100%;
+              
+            }
+            .workItems{
+                padding: 1rem;
+
+
+                aside{
+                    padding: 1rem;
+                    h4{
+                     font-size: 1rem
+                    }
+                    p{
+                      letter-spacing: unset;
+                      line-height: unset;
+                    }
+                    >div{
+                        flex-direction: column;
+                        >a{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0.5rem;
+                            &:first-of-type{
+                             padding: 0.5rem;
+                            }
+                            &:last-of-type{
+                             padding: 0.5rem;
+                             text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

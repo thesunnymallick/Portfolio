@@ -1,0 +1,149 @@
+@import "./variable.scss";
+.footer{
+    width: 100%;
+    height: 25rem;
+    background-color: $color6;
+    padding: 2rem;
+    section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-left: 2px solid $color4;
+            img{
+                width: 8rem;
+                height: 8rem;
+                object-fit: contain;
+                border-radius: 50%;
+            }
+            h2{
+                font:600 1.50rem $text2;
+                color: $color4;
+                margin:1rem 0rem;
+
+            }
+            p{
+                width: 50%;
+                letter-spacing: 2px;
+                color: $color4;
+                margin: 1rem 0rem;
+                font-size: 1.1rem;
+            }
+            >a{
+                margin: 1rem 3rem;
+                width: 2.5rem ;
+                height: 2.5rem;
+                 border-radius: 50%;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                border: 2px solid $color4;
+                svg{
+                  font-size: 1.5rem;
+                
+                  color: $color4;
+                  transition: all 0.3s;
+
+                  &:hover{
+                    color: $color3;
+                  }
+                }
+            }
+        }
+    }
+}
+
+.footer-main{
+    background-color: black;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+    p{
+        text-align: center;
+        color: $color4;
+        letter-spacing: 1px;
+        font-size: 1rem;
+
+    }
+}
+
+@media only screen and (max-width: 1232px){
+
+    .footer{
+        padding: 1.5rem;
+        height: 15rem;
+        section{
+          div{
+            padding-left: 1.5rem;
+            img{
+                width: 5rem;
+                height: 5rem;
+            }
+            h2{
+                font-size: 1.2rem;
+                margin: 0.5rem;
+            }
+            p{
+              width: 70%;
+              font-size: 0.8rem;
+              margin: 0.5rem;
+            }
+            >a{
+                margin: 0.5rem 1rem;
+                width: 1.8rem;
+                height: 1.8rem;
+                >svg{
+                 font-size: 1.1rem;
+                }
+            }
+          }
+        }
+    }
+    .footer-main{
+        p{
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 670px){
+    .footer{
+        padding: 1rem;
+        height: 20rem;
+
+        section{
+            flex-direction: column;
+
+            div{
+                border: none;
+
+
+                p{
+                    width: 100%;
+                }
+            }
+        }
+
+        .social-link{
+            margin-top: 1rem;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .footer-main{
+        p{
+            font-size: 0.6rem;
+        }
+    }
+}

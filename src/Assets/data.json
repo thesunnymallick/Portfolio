@@ -1,0 +1,56 @@
+{
+    "projects": [
+      {
+        "date": "07/10/2022",
+        "title": "Movies Lite",
+        "description": "This is Movies and Tv Series app using reactJS and Material UI with fully responsive functional. user can view all movies and tv series trailer. user can view which movies and tv series are trending now. user can search the movies and tv series. where user can search the movie and tv series categoric wise just like action, comedy. alll movies and tv series TMDB API fetch using axios",
+        "url": "https://movieslite.netlify.app/",
+        "github_url":"https://github.com/thesunnymallick/MoviesLite",
+        "imgSrc": "https://i.postimg.cc/3N3xJrvS/Screenshot-39.png"
+      },
+  
+      {
+        "date": "11/10/2022",
+        "title": "Burger Bazar",
+        "description": "This is Burger Bazar animation website using ReactJS, framer motion and Sass with fully responsive This project frontend part completed and backend part on going. Frontend part deploy on netlify",
+        "url": "https://burgerbazar.netlify.app/",
+        "github_url":"https://github.com/thesunnymallick/Burger-Bazar",
+        "imgSrc": "https://i.postimg.cc/KYDmRSDR/Screenshot-47.png"
+      },
+      {
+        "date": "15/10/2022",
+        "title": "ShoppedIn",
+        "description": "A mern stack e-commerce website where user can create account, user can login account, place order and create a review Where user can update profile and update password Created an admin panel to manage orders Admin can create product, update product, delete product, and view all products, update order status, delete order and view all orders view all reviews, and delete review",
+        "url": "https://nice-plum-beetle-cuff.cyclic.app",
+        "github_url":"https://github.com/thesunnymallick/mernStackProjectShoppedIn",
+        "imgSrc": "https://i.postimg.cc/cH7txbrm/Screenshot-7.png"
+      },
+  
+      {
+        "date": "17/10/2022",
+        "title": "Xstore",
+        "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+        "url": "https://myxstore.netlify.app/",
+        "github_url": "https://github.com/thesunnymallick/x-store",
+        "imgSrc": "https://i.postimg.cc/XvM3Y7Mf/Screenshot-64.png"
+      },
+
+      {
+        "date": "17/10/2022",
+        "title": "Xcrypto",
+        "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+        "url": "https://x-crypto-one.vercel.app/",
+        "github_url": "https://github.com/thesunnymallick/Xcrypto",
+        "imgSrc": "https://i.postimg.cc/R0z5zsfG/Screenshot-66.png"
+      },
+
+      {
+        "date": "20/10/2022",
+        "title": "PORTFOLIO",
+        "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+        "url": "/",
+        "github_url": "/",
+        "imgSrc": "https://i.postimg.cc/JnZSf86p/Screenshot-67.png"
+      }
+    ]
+  }

@@ -1,0 +1,141 @@
+@import "variable.scss";
+#contact{
+    width: 100%;
+    height: 100vh;
+    background-color: $color1;
+    display: flex;
+    padding: 2rem;
+
+    section{
+     width: 50%;
+     background-color: $color3_light;
+     background-color: rgb(255, 208, 208);
+
+     display: flex;
+     justify-content: center;
+     >form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            font: 500 2rem $text2;
+            letter-spacing: 2px;
+            border-bottom: 1px solid $color5;
+            margin: 1rem;
+            padding: 0.5rem;
+            color: $color5;
+        }
+        >input,>button{
+            width: 50%;
+            padding: 0.5rem 1rem;
+            margin: 1rem;
+            outline: none;
+            border: none;
+            border: 1px solid $color5;
+            font-size: 1rem;
+            
+        }
+        >input{
+            background-color: $color1;
+            color: $color6;
+            
+        }
+
+        >button{
+            background-color: $color5;
+             color: $color4;
+             font-weight: 600;
+             border: none;
+             cursor: pointer;
+            transition: all 0.3s;
+            &:hover{
+                background-color: $color6;
+            }
+
+        }
+     }
+
+    }
+    aside{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color5;
+
+        img{
+            width: 60%;
+        }
+    }
+}
+
+
+.disabledBtn{
+    background-color: $color6_2 !important;
+    color: $color6_1 !important;
+    cursor: not-allowed !important;
+  }
+
+
+  @media only screen and (max-width: 1232px){
+    #contact{
+        padding: 1.5rem;
+        section{
+            >form{
+                >input,>button{
+                    width: 80%;
+                    padding: 0.7rem;
+                }
+            }
+        }
+        aside{
+            img{
+                width: 70%;
+            }
+        }
+    }
+  }
+
+
+  @media only screen and (max-width: 890px){
+    #contact{
+        padding: 1rem;
+        height: 90vh;
+        section{
+            >form{
+                h2{
+                    font-size: 1.5rem;
+                }
+                >input,>button{
+                    width: 80%;
+                    padding: 0.6rem;
+                }
+            }
+        }
+        aside{
+            img{
+                width: 70%;
+            }
+        }
+    }
+  }
+
+  
+@media only screen and (max-width: 670px){
+    #contact{
+        flex-direction: column-reverse;
+        height: 100%;
+        section{
+            width: 100%;
+        }
+        aside{
+            width: 100%;
+
+            img{
+                width: 50%;
+            }
+        }
+    }
+}
